@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { Wallet } from 'lucide-react';
 import { WagmiProvider } from 'wagmi';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { config } from './config/wagmi'; // Fix import path
+import { Menu, X, Wallet } from 'lucide-react';
 import { useAccount, useConnect, useDisconnect } from 'wagmi';
-import { config } from './config/wagmi';
 
-// Import page components
+// Import your pages
 import HomePage from './pages/HomePage';
 import MintPage from './pages/MintPage';
 import ProfilePage from './pages/ProfilePage';
 
-// Query client for React Query
+// Create query client
 const queryClient = new QueryClient();
 
 // Navigation Component

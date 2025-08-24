@@ -10,7 +10,7 @@ export const config = createConfig({
   ],
   transports: {
     [sepolia.id]: http(`https://sepolia.infura.io/v3/${import.meta.env.VITE_INFURA_PROJECT_ID}`),
-    [mainnet.id]: http(`https://sepolia.infura.io/v3/${import.meta.env.VITE_INFURA_PROJECT_ID}`),
+    [mainnet.id]: http(`https://mainnet.infura.io/v3/${import.meta.env.VITE_INFURA_PROJECT_ID}`),
   },
 });
 
@@ -45,6 +45,20 @@ export const CONTRACT_CONFIG = {
       "inputs": [],
       "name": "totalSupply",
       "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [{"internalType": "string", "name": "", "type": "string"}],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [{"internalType": "string", "name": "", "type": "string"}],
       "stateMutability": "view",
       "type": "function"
     }

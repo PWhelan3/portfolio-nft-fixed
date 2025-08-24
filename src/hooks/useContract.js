@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react';
 import { useAccount, useWriteContract, useReadContract, useWaitForTransactionReceipt } from 'wagmi';
 import { CONTRACT_CONFIG } from '../config/wagmi';
 import { uploadNFTToPinata, validateImageFile } from '../utils/pinata';
+import React, { useState, useCallback, useEffect } from 'react';
 
 /**
  * Hook for minting NFTs

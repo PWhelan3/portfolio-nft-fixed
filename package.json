@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-nft-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network sepolia"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.85.5",
+    "lucide-react": "^0.540.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "viem": "^2.34.0",
+    "wagmi": "^2.16.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^4.9.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "dotenv": "^16.0.0",
+    "hardhat": "^2.22.0",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.1.2"
+  }
+}

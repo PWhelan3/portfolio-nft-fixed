@@ -40,7 +40,7 @@ const HomePage = () => {
                 description: "Built with React, Solidity, and Wagmi. Features simple NFT minting with IPFS storage via Pinata for portfolio showcase.",
                 image: "/CurrentMap.png",
                 tech: ["Solidity", "React", "Sepolia", "Hardhat", "Pinata", "Metamask", "Wagmi"],
-                link: "#"
+                link: "https://badproject.vercel.app/"
               },
               {
                 title: "Fitness Activity App", 
